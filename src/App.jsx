@@ -1,13 +1,16 @@
 import './App.css'
 import React from 'react'
-import Welcome from './embedding-expresiion/Welcome'
-import Person from './embedding-expresiion/Person '
-import Items from './react-keys/Items'
-import AllProducts from './react-keys/AllProducts'
-import Indexx from './task/Indexx'
-import Simple from './Form/Simple'
-import Form from './Form/Form'
-import Crud from './Local-storage/Crud '
+// import Welcome from './embedding-expresiion/Welcome'
+// import Person from './embedding-expresiion/Person '
+// import Items from './react-keys/Items'
+// import AllProducts from './react-keys/AllProducts'
+// import Indexx from './task/Indexx'
+// import Simple from './Form/Simple'
+// import Form from './Form/Form'
+// import Crud from './Local-storage/Crud '
+
+// import JobApplicationForm from './Work/JobApplicationForm'
+import AxiosGet from './Axios/AxiosGet'
 // import CallingFunction from './embedding-expresiion/CallingFunction'
 // import Conditinal from './embedding-expresiion/Conditinal'
 // import NewBasic from './NewBasic'
@@ -129,10 +132,14 @@ const App = () => {
      {/* ----form-- */}
      {/* <Simple/> */}
      {/* <Form/> */}
+     {/* <JobApplicationForm/> */}
+     
        
  {/* localstorge */}
 
- <Crud/>
+ {/* <Crud/> */}
+
+ <AxiosGet/>
 
      
 

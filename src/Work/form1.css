@@ -1,0 +1,163 @@
+/* Full page background */
+body {
+    background-color: #0d6657;
+    /* deep navy blue */
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* Wrapper for center form */
+.form-wrapper {
+    width: 450px;
+    margin: 50px auto;
+
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Form heading */
+.form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Row layout (two inputs per row) */
+.row {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Inputs, selects, textarea */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #0d5a66;
+}
+
+/* Textarea height */
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* File upload section */
+.file-box label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.file-box p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Button group */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Buttons */
+.reset-btn,
+.send-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100px;
+}
+
+.reset-btn {
+    background-color: #ffa62b;
+}
+
+.send-btn {
+    background-color: #ffa62b;
+}
+
+/* Footer */
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #f1f1f1;
+}
+
+/*** ERRORS ***/
+small {
+    color: red;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/******** SUCCESS POPUP ********/
+.success-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+}
+
+.success-box {
+    background: #fff;
+    padding: 25px 35px;
+    border-radius: 10px;
+    border-left: 6px solid #28a745;
+    text-align: center;
+    animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
