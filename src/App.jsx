@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
-import Crud from './Local-storage/Crud '
+// import Crud from './Local-storage/Crud '
+import TodoApp from './Todo/TodoApp'
 // import Login from './Session storage/Login'
 // import Welcome from './embedding-expresiion/Welcome'
 // import Person from './embedding-expresiion/Person '
@@ -139,7 +140,7 @@ const App = () => {
      
        
  {/* localstorge */}
-<Crud/>
+{/* <Crud/> */}
 
  {/* <AxiosGet/> */}
  {/* <AxiosPost/> */}
@@ -147,6 +148,10 @@ const App = () => {
  {/* sessionStorage */}
 
 {/* <Login/> */}
+
+      {/* todo */}
+
+      <TodoApp/>
 
      
 
