@@ -1,29 +1,36 @@
-.formnew{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-
+.formnew {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-form{
-  
+
+h1,
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+
+form {
+  width: 100%;
   max-width: 500px;
   margin: 2rem auto;
-  padding: 2rem; 
+  padding: 2rem;
   border: 1px solid #0b61eb;
   border-radius: 8px;
-  font-family: Arial, sans-serif;
   background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 form div {
-  margin-bottom: 1rem;  /*1 rem is 16px */
+  margin-bottom: 1rem;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="number"] {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -31,13 +38,12 @@ input[type="password"] {
   box-sizing: border-box;
 }
 
-input[type="radio"] {
-  margin-right: 0.3rem;
+p {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
 }
 
-label {
-  margin-right: 1rem;
-}
 
 button {
   padding: 0.6rem 1.2rem;
@@ -52,29 +58,49 @@ button:hover {
   background-color: #0056b3;
 }
 
-p {
-  margin: 0.3rem 0 0;
-  color: red;
-  font-size: 0.9rem;
+
+button.danger {
+  background-color: red;
 }
+
+button.danger:hover {
+  background-color: #b30000;
+}
+
+
+button+button {
+  margin-left: 10px;
+}
+
+
+.user-list-header {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.table-container {
+  max-width: 700px;
+  width: 100%;
+  margin: 20px auto;
+}
+
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
 }
 
-th, td {
+th,
+td {
   padding: 12px 10px;
   border-bottom: 1px solid #ddd;
-  text-align: left;
 }
 
 tr:hover {
   background-color: #f9f9f9;
-}
-
-h1, h2 {
-  text-align: center;
-  color: #333;
 }

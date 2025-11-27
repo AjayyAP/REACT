@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.app-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background: linear-gradient(135deg, #29c7ac, #3a86ff, #5a4fcf);
+    background-size: 220% 220%;
+    animation: bgMove 8s ease infinite;
+
+    padding: 20px;
+}
+
+@keyframes bgMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card {
+    width: 360px;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 35px 28px;
+    border-radius: 22px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+
+.input {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 14px;
+
+    border-radius: 12px;
+    border: 1.6px solid #d0d8f0;
+    background: #f7faff;
+    font-size: 15px;
+    transition: 0.25s ease;
+}
+
+.input:focus {
+    border-color: #3a86ff;
+    box-shadow: 0 0 8px rgba(58, 134, 255, 0.35);
+    background: #ffffff;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 6px;
+
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+
+    transition: 0.25s ease;
+}
+
+
+.signup-btn {
+    background: linear-gradient(135deg, #3a86ff, #5a4fcf);
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #29c7ac, #3ad5c9);
+}
+
+.logout-btn {
+    background: linear-gradient(135deg, #ff6b6b, #ff8f8f);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.18);
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.switch-text {
+    margin-top: 16px;
+    text-align: center;
+    color: #444;
+    font-size: 14px;
+}
+
+.switch-link {
+    color: #3a86ff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.switch-link:hover {
+    text-decoration: underline;
+}
+
+
+.message {
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+
+    background: #e8f3ff;
+    color: #0b3d91;
+}
+
+.message.error {
+    background: #ffe4e4;
+    color: #d00000;
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+    .card {
+        width: 100%;
+        padding: 30px;
+    }
+}

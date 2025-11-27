@@ -48,7 +48,7 @@ const AxiosPost = () => {
                 <input type="email" placeholder='email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 <br /> <br />
 
-                {/* message */}
+
 
 
                 <button type='submit'> submit</button>

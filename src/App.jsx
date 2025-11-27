@@ -1,5 +1,7 @@
 import './App.css'
 import React from 'react'
+import Crud from './Local-storage/Crud '
+// import Login from './Session storage/Login'
 // import Welcome from './embedding-expresiion/Welcome'
 // import Person from './embedding-expresiion/Person '
 // import Items from './react-keys/Items'
@@ -10,8 +12,8 @@ import React from 'react'
 // import Crud from './Local-storage/Crud '
 
 // import JobApplicationForm from './Work/JobApplicationForm'
-import AxiosGet from './Axios/AxiosGet'
-import AxiosPost from './Axios/AxiosPost'
+// import AxiosGet from './Axios/AxiosGet'
+// import AxiosPost from './Axios/AxiosPost'
 // import CallingFunction from './embedding-expresiion/CallingFunction'
 // import Conditinal from './embedding-expresiion/Conditinal'
 // import NewBasic from './NewBasic'
@@ -137,11 +139,14 @@ const App = () => {
      
        
  {/* localstorge */}
-
- {/* <Crud/> */}
+<Crud/>
 
  {/* <AxiosGet/> */}
- <AxiosPost/>
+ {/* <AxiosPost/> */}
+
+ {/* sessionStorage */}
+
+{/* <Login/> */}
 
      
 
