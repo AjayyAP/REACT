@@ -11,6 +11,7 @@ import React from 'react'
 
 // import JobApplicationForm from './Work/JobApplicationForm'
 import AxiosGet from './Axios/AxiosGet'
+import AxiosPost from './Axios/AxiosPost'
 // import CallingFunction from './embedding-expresiion/CallingFunction'
 // import Conditinal from './embedding-expresiion/Conditinal'
 // import NewBasic from './NewBasic'
@@ -139,7 +140,8 @@ const App = () => {
 
  {/* <Crud/> */}
 
- <AxiosGet/>
+ {/* <AxiosGet/> */}
+ <AxiosPost/>
 
      
 
