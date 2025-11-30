@@ -1,7 +1,10 @@
 import './App.css'
 import React from 'react'
 // import Crud from './Local-storage/Crud '
-import TodoApp from './Todo/TodoApp'
+// import TodoApp from './Todo/TodoApp'
+// import BasicHookForm from './Form/React-hook-form/BasicHookForm'
+// import AxiosPut from './Axios/AxiosPut'
+import AxiosDelete from './Axios/AxiosDelete'
 // import Login from './Session storage/Login'
 // import Welcome from './embedding-expresiion/Welcome'
 // import Person from './embedding-expresiion/Person '
@@ -151,7 +154,13 @@ const App = () => {
 
       {/* todo */}
 
-      <TodoApp/>
+      {/* <TodoApp/> */}
+
+      {/* <BasicHookForm/> */}
+
+      {/* <AxiosPut/> */}
+
+      <AxiosDelete/>
 
      
 
