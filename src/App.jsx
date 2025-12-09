@@ -1,11 +1,13 @@
 import './App.css'
-import React from 'react'
+// import { useDispatch, useSelector } from 'react-redux';
+// import { toggleTheme } from './redux/themeSlice';
+
 // import Crud from './Local-storage/Crud '
-// import TodoApp from './Todo/TodoApp'
+import TodoApp from './Todo/TodoApp'
 // import BasicHookForm from './Form/React-hook-form/BasicHookForm'
 // import AxiosPut from './Axios/AxiosPut'
 // import AxiosDelete from './Axios/AxiosDelete'
-import Counter from './Redux/Counter'
+// import Counter from './Redux/Counter'
 // import Login from './Session storage/Login'
 // import Welcome from './embedding-expresiion/Welcome'
 // import Person from './embedding-expresiion/Person '
@@ -55,8 +57,26 @@ import Counter from './Redux/Counter'
 // import AppDev from './Nested-Routing/Pages/Services/AppDev'
 
 const App = () => {
+  //  const theme = useSelector((state) => state.theme.mode);
+  // const dispatch = useDispatch();
+
+
+  
+
   return (
     <>
+     {/* <div className={`app-container ${theme}`}> */}
+    
+    {/* ---------------- THEME TOGGLE (WORKING) ---------------- */}
+    {/* <header className="header">
+      <h1>Light & Dark Mode (Redux)</h1>
+      <button 
+        className="theme-toggle-btn" 
+        onClick={() => dispatch(toggleTheme())}
+      >
+        {theme === "light" ? "🌞 Light Mode" : "🌙 Dark Mode"}
+      </button>
+    </header> */}
       {/* ------------------------embedding js ------------------*/}
       {/* <NewBasic/> */}
       {/* <Welcome/> */}
@@ -155,7 +175,7 @@ const App = () => {
 
       {/* todo */}
 
-      {/* <TodoApp/> */}
+      <TodoApp/>
 
       {/* <BasicHookForm/> */}
 
@@ -164,15 +184,21 @@ const App = () => {
       {/* <AxiosDelete/> */}
       
 
-     <Counter/>
+     {/* <Counter/> */}
 
+    
+
+
+  {/* </div> */}
 </>
 
 
+ 
 
   
   )
 }
+
 
 export default App
 

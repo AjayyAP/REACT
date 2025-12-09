@@ -1,0 +1,26 @@
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.app-container.light {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode */
+.app-container.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.theme-toggle-btn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 18px;
+  border-radius: 6px;
+}
